@@ -50,6 +50,7 @@ docker run -it satabrata2000/command_line_tool:1.0
 ```sh
 tailcmd --help
 ```
+> **Example uasge:** tailcmd fetch -a 3.110.170.88 -f query.log 
 
 ## Tech Stack
 ---

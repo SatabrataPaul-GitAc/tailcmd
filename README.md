@@ -15,7 +15,7 @@ git clone https://github.com/SatabrataPaul-GitAc/tailcmd.git
 ```
 > ***Change the directory***
 ```sh
-cd cli_tool
+cd tailcmd
 ```
 > ***Install the dependencies***
 ```sh

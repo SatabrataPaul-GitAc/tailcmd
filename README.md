@@ -59,3 +59,27 @@ tailcmd --help
 > Watchdog is implemented to monitor the log file for changes and take action according to it.
 > Server emits out socket io events to inform the command-line tool about the change.
 
+- Client: JavaScript
+- Server: Python
+- Protocol: webscokets
+
+## Server
+---
+The server side code implements the watch feature that monitors the file for a change and notifies the client side command line tool about it.
+Prometheus is configured to write the query logs to a file as specified in its configuration file, whenever we run a promQL query from the webUI
+
+The idea about about the command-line tool making http requests to the server for querying about changes made to the file is inefficient, because it would make lots unnecessary of API calls  even when there is no change made to the file. 
+Thus, websocket protocol is used here.
+Watchdog is implemented to monitor the file for any change and trigger an event accordingly.
+
+# Important Note:
+## Issues
+
+> Certain issues regarding the command-line tool that couldn't be fixed
+
+> The client is unable to receive the event that is emitted from the server whenever any change is made to the file. 
+> The watchdog is monitoring the changes properly, as the changes are displayed on the server terminal. But, when the socket event is emitted out, the client is unable to receive it.
+> The transport protocol used by websocket is polling , therefore it always tries to re-establish a connecteion with the server. 
+
+> Apart from this, the application is running properly on local as well as from inside of the container
+

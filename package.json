@@ -1,0 +1,24 @@
+{
+  "name": "cli_tool",
+  "version": "1.0.0",
+  "description": "a cli tool which updates real time changes of a file on server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+	  "tailcmd": "./index.js"
+  },
+  "keywords": [
+    "javascript",
+    "cli",
+    "devops",
+    "monitor"
+  ],
+  "author": "Satabrata Paul",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "socket.io-client": "^4.5.1"
+  }
+}

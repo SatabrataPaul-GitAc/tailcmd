@@ -73,6 +73,8 @@ The idea about about the command-line tool making http requests to the server fo
 Thus, websocket protocol is used here.
 Watchdog is implemented to monitor the file for any change and trigger an event accordingly.
 
+The python process is made persistent using pm2 process manager
+
 # Important Note:
 ## Issues
 

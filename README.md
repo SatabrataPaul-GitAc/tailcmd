@@ -82,11 +82,12 @@ The python process is made persistent using pm2 process manager
 
 > The client is unable to receive the event that is emitted from the server whenever any change is made to the file. 
 > The watchdog is monitoring the changes properly, as the changes are displayed on the server terminal. But, when the socket event is emitted out, the client is unable to receive it.
+> The client displays ping timeout
 > The transport protocol used by websocket is polling , therefore it always tries to re-establish a connecteion with the server. 
 
 > Apart from this, the application is running properly on local as well as from inside of the container
 
-## Demo 
+## Demo t
 Tailcmd [**demo**](https://drive.google.com/file/d/1kRk_T7Ui9ffxDbEQc58CYPManGAeEPXU/view?usp=sharing)
 
 Dockerhub [Link](https://hub.docker.com/repository/docker/satabrata2000/command_line_tool)

@@ -87,7 +87,7 @@ The python process is made persistent using pm2 process manager
 
 > Apart from this, the application is running properly on local as well as from inside of the container
 
-## Demo t
+## Demo
 Tailcmd [**demo**](https://drive.google.com/file/d/1kRk_T7Ui9ffxDbEQc58CYPManGAeEPXU/view?usp=sharing)
 
 Dockerhub [Link](https://hub.docker.com/repository/docker/satabrata2000/command_line_tool)

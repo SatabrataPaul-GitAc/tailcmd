@@ -20,7 +20,7 @@ class Handler(FileSystemEventHandler):
         run_cmd = subprocess.Popen("tail -{} {}".format(self.num, self.file_path), stdout=subprocess.PIPE, shell=True)
         file_data = run_cmd.communicate()[0].decode()
         print(file_data)
-        sio.emit('file_data_modified', data={'content': 'modified'})
+        sio.emit('file_data_modified', data={'content': file_data})
 
 
 @sio.event
